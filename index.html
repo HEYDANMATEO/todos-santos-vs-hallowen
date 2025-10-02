@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Santos vs Halloween</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.elfinanciero.com.mx/resizer/v2/4ZYNZEX6NVFUPEOFPSXDRFVYOA.jpg?smart=true&auth=6b28198ec575dc928837e371e85c1f470b1accb6d1942d8228e2e26268c716ac&width=1200&height=675&quality=85');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .todos-santos-card {
+            border-top: 4px solid #d40000;
+        }
+        .halloween-card {
+            border-top: 4px solid #fe7b00;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+        }
+        .nav-link.active {
+            font-weight: bold;
+        }
+        .btn-outline-purple {
+            color: #fe7b00;
+            border-color: #fe7b00;
+        }
+        .btn-outline-purple:hover {
+            background-color: #fe7b00;
+            color: white;
+        }
+        .text-purple {
+            color: #fe7b00 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-moon-stars-fill"></i> Fiestas de Otoño
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Todos Santos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="historia_t.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="costumbres_t.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="gastronomia_t.html">Gastronomía</a></li>
+                            <li><a class="dropdown-item" href="pag_libre1.html">Página Libre</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Halloween
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="historia_h.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="costumbres_h.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="gastronomia_h.html">Gastronomía</a></li>
+                            <li><a class="dropdown-item" href="pag_libre2.html">Página Libre</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Todos Santos vs. Halloween</h1>
+            <p class="lead">Dos tradiciones, un mismo espíritu de celebración</p>
+            <a href="#comparison" class="btn btn-primary btn-lg mt-3">Explorar Comparación</a>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Comparación de Tradiciones</h2>
+            
+            <div class="row">
+                <!-- Todos Santos Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover todos-santos-card">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-flower1 display-1 text-danger"></i>
+                            </div>
+                            <h3 class="card-title">TODOS SANTOS</h3>
+                            <p class="card-text">Una tradición profundamente arraigada en la cultura hispana que honra a los difuntos con ofrendas, comida y recuerdos.</p>
+                            <div class="mt-4">
+                                <a href="historia_t.html" class="btn btn-outline-danger me-2">Historia</a>
+                                <a href="costumbres_t.html" class="btn btn-outline-danger me-2">Costumbres</a>
+                                <a href="gastronomia_t.html" class="btn btn-outline-danger me-2">Gastronomía</a>
+                                <a href="pag_libre1.html" class="btn btn-outline-danger">Página Libre</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Halloween Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover halloween-card">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-emoji-sunglasses display-1 text-purple"></i>
+                            </div>
+                            <h3 class="card-title">HALLOWEEN</h3>
+                            <p class="card-text">Una festividad de origen celta que se ha popularizado globalmente con disfraces, dulces y decoraciones espeluznantes.</p>
+                            <div class="mt-4">
+                                <a href="historia_h.html" class="btn btn-outline-purple me-2">Historia</a>
+                                <a href="costumbres_h.html" class="btn btn-outline-purple me-2">Costumbres</a>
+                                <a href="gastronomia_h.html" class="btn btn-outline-purple me-2">Gastronomía</a>
+                                <a href="pag_libre2.html" class="btn btn-outline-purple">Página Libre</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Galería de Imágenes</h2>
+            <div id="festivalCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#festivalCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#festivalCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#festivalCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://imagenes.elpais.com/resizer/v2/KNQFXG7CYVCO3N2HZRVKQGKI2Q.jpg?auth=1a16c5528f513e3495c87df8613a10e39e16bfb40d14ab38daa6c31fe5810e78&width=1200" class="d-block w-100" alt="Ofrenda de Todos Santos" style="height: 500px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Ofrenda de Todos Santos</h5>
+                            <p>Altar tradicional con flores, velas y comida para honrar a los difuntos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tekno-step.com/wp-content/uploads/2021/07/DECORACION_HALLOWEEN.jpg" class="d-block w-100" alt="Decoración de Halloween" style="height: 500px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Decoración de Halloween</h5>
+                            <p>Calabazas talladas y decoraciones temáticas para la noche de brujas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://oem.com.mx/elheraldodechiapas/img/13997468/1727876595/BASE_LANDSCAPE/1200/image.webp" class="d-block w-100" alt="Dulces tradicionales" style="height: 500px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Dulces Tradicionales</h5>
+                            <p>Comida típica de ambas celebraciones que une a familias y comunidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#festivalCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#festivalCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Fiestas de Otoño</h5>
+                    <p>Un proyecto educativo que compara las tradiciones de Todos Santos y Halloween.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="historia_t.html" class="text-white">Todos Santos - Historia</a></li>
+                        <li><a href="historia_h.html" class="text-white">Halloween - Historia</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <address>
+                        <a href="mailto:contacto@fiestasdeotono.com" class="text-white text-decoration-none">
+                            <i class="bi bi-envelope me-2"></i>Heydan Mateo Cuarite Gomez
+                        </a><br>
+                        <i class="bi bi-geo-alt me-2"></i>La Paz, Bolivia
+                    </address>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="text-center">
+                <p>&copy; 2025 Fiestas de Otoño.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

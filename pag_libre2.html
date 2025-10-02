@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Libre - Halloween</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-halloween {
+            background: linear-gradient(rgba(254, 123, 0, 0.8), rgba(75, 0, 130, 0.7)), 
+                        url('https://images.unsplash.com/photo-1572860177027-8b6b6e51f8f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .custom-badge {
+            background: linear-gradient(135deg, #fe7b00, #ffa94d);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .halloween-orange {
+            color: #fe7b00;
+        }
+        .spooky-text {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-moon-stars-fill"></i> Fiestas de Otoño
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Todos Santos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="historia_t.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="costumbres_t.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="gastronomia_t.html">Gastronomía</a></li>
+                            <li><a class="dropdown-item" href="pag_libre1.html">Página Libre</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Halloween
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="historia_h.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="costumbres_h.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="gastronomia_h.html">Gastronomía</a></li>
+                            <li><a class="dropdown-item active" href="pag_libre2.html">Página Libre</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-halloween">
+        <div class="container">
+            <h1 class="display-3 fw-bold spooky-text">Página Libre - Halloween</h1>
+            <p class="lead">Explora el lado más misterioso y divertido de esta festividad</p>
+            <span class="custom-badge">¡Dulce o Truco!</span>
+        </div>
+    </section>
+
+    <!-- Datos Curiosos Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 halloween-orange">Datos Espeluznantes</h2>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card shadow">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-currency-dollar display-4 halloween-orange mb-3"></i>
+                            <h5 class="card-title">Economía Naranja</h5>
+                            <p class="card-text">Se gastan más de $9 billones anuales en dulces, disfraces y decoraciones.</p>
+                            <small class="text-muted">Negocio muy dulce</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card shadow">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-globe display-4 halloween-orange mb-3"></i>
+                            <h5 class="card-title">Expansión Global</h5>
+                            <p class="card-text">Celebrado en más de 30 países alrededor del mundo con adaptaciones locales.</p>
+                            <small class="text-muted">Fenómeno mundial</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card shadow">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-emoji-laughing display-4 halloween-orange mb-3"></i>
+                            <h5 class="card-title">Disfraces Populares</h5>
+                            <p class="card-text">Los disfraces más populares incluyen superhéroes, princesas y personajes de películas.</p>
+                            <small class="text-muted">Creatividad sin límites</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Halloween -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #fe7b00;">Galería de Terror</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-secondary text-white">
+                        <img src="https://cadenaser.com/resizer/v2/OCLEXSAZV5EYVNC7B6JGISGPFI.jpg?auth=9b8fffcdeec407a25fde192d2db53e54ed48ba0472083dafdc47ec7f753b45a1&quality=70&width=990&height=742&smart=true" 
+                             class="card-img-top" alt="Calabazas decoradas" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #fe7b00;">Jack-o'-Lantern</h5>
+                            <p class="card-text">La leyenda de Jack el Tacaño y su calabaza iluminada que vaga por la eternidad.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-secondary text-white">
+                        <img src="https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             class="card-img-top" alt="Casa embrujada" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #fe7b00;">Casas Embrujadas</h5>
+                            <p class="card-text">Atracciones que generan millones en ingresos cada temporada de Halloween.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información Adicional -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="alert alert-warning">
+                        <h4><i class="bi bi-lightning"></i> Curiosidades de Halloween</h4>
+                        <ul class="mb-0">
+                            <li>El "trick or treat" se popularizó en Estados Unidos en los años 1950</li>
+                            <li>Las calabazas reemplazaron a los nabos originalmente usados en Irlanda</li>
+                            <li>Samhain significa "fin del verano" en gaélico irlandés</li>
+                            <li>El naranja representa la cosecha y el negro la oscuridad del invierno</li>
+                            <li>Es la segunda festividad comercial más grande después de la Navidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 halloween-orange">Estadísticas Impresionantes</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="display-4 fw-bold halloween-orange">172M</div>
+                    <p>Personas celebran Halloween en EE.UU.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="display-4 fw-bold halloween-orange">$3.2B</div>
+                    <p>Gastado en disfraces anualmente</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="display-4 fw-bold halloween-orange">$2.7B</div>
+                    <p>Gastado en decoraciones</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="display-4 fw-bold halloween-orange">$2.6B</div>
+                    <p>Gastado en dulces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Fiestas de Otoño</h5>
+                    <p>Descubre la magia de Halloween y Todos Santos</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>¡Síguenos para más contenido espeluznante!</p>
+                    <div>
+                        <i class="bi bi-facebook me-3"></i>
+                        <i class="bi bi-instagram me-3"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Fiestas de Otoño. ¡Boo! 👻</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
